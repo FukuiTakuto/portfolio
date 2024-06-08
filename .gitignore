@@ -1,0 +1,19 @@
+# .gitignore
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Database files
+*.sqlite3
+
+# Secrets
+secret_settings.py
+
+# IDE settings
+.vscode/
+.idea/
+

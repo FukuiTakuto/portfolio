@@ -1,1 +1,36 @@
-ふっきー
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+  </head>
+  
+  <body>
+    <title>portfolio</title>
+    <header>
+      <nav>
+        <ul>
+          <li href="#"><a>HOME</a></li>
+          <li href="#"><a>お問い合わせ</a></li>
+        </ul>
+      </nav>  
+    </header>
+    
+    <main>
+      <div class="container">
+        <img src="{% static 'mainimg.jpg' %}" alt="背景画像">
+        <p>my portfolio</p>
+      </div>
+    </main>
+
+    <aside>
+      <h3>作者はこんな人</h3>
+      <p>2003年生まれ、愛知県在住</p>
+      <p>名古屋工業大学工学部電気機械工学科所属</p>
+      <p><a href="https://github.com/FukuiTakuto" target="_blank">Githubアカウント</a></p>
+      <p><a href="{% url 'profile' %}">もっと読む</a></p>
+    </aside>
+  </body>
+</html>

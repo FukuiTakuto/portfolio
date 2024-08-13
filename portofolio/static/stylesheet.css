@@ -31,18 +31,18 @@ img{
 }
 
 main .container {
-    position:relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 div p{
-  position:absolute;
-  top:0;
-  left:0;
-  font-size:100px;
-  color:white;
-  left:37%;
-  top:20%;
-  font-family:"Monotype Corsiva";
+  font-size: 100px;
+  color: white;
+  font-family: "Monotype Corsiva";
+  text-align: center;
 }
 
 aside{
